@@ -1,0 +1,68 @@
+using System;
+
+namespace Beep_Megalovania_SelfMade
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Random r = new Random();
+            while (true)
+            { 
+                Console.ForegroundColor = (ConsoleColor)r.Next(0, 16);
+                Console.Write("Sans");
+                Console.Beep(587, 250);
+                Console.Beep(587, 250);
+                Console.Beep(1175, 500);
+                Console.Beep(440, 750);
+                Console.Beep(415, 500);
+                Console.Beep(392, 500);
+                Console.Beep(349, 500);
+                Console.Beep(293, 250);
+                Console.Beep(349, 250);
+                Console.Beep(392, 250);
+
+                Console.ForegroundColor = (ConsoleColor)r.Next(0, 16);
+                Console.WriteLine("Sans");
+                Console.Beep(523, 250);
+                Console.Beep(523, 250);
+                Console.Beep(1175, 500);
+                Console.Beep(440, 750);
+                Console.Beep(415, 500);
+                Console.Beep(392, 500);
+                Console.Beep(349, 500);
+                Console.Beep(293, 250);
+                Console.Beep(349, 250);
+                Console.Beep(392, 250);
+
+                Console.ForegroundColor = (ConsoleColor)r.Next(0, 16);
+                Console.Write("Sans");
+                Console.Beep(493, 250);
+                Console.Beep(493, 250);
+                Console.Beep(1175, 500);
+                Console.Beep(440, 750);
+                Console.Beep(415, 500);
+                Console.Beep(392, 500);
+                Console.Beep(349, 500);
+                Console.Beep(293, 250);
+                Console.Beep(349, 250);
+                Console.Beep(392, 250);
+
+                Console.ForegroundColor = (ConsoleColor)r.Next(0, 16);
+                Console.Write("Sans");
+                Console.Beep(466, 250);
+                Console.Beep(466, 250);
+                Console.Beep(1175, 500);
+                Console.Beep(440, 750);
+                Console.Beep(415, 500);
+                Console.Beep(392, 500);
+                Console.Beep(349, 500);
+                Console.Beep(293, 250);
+                Console.Beep(349, 250);
+                Console.Beep(392, 250);
+            }
+
+
+        }
+    }
+}
