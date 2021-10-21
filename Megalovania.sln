@@ -1,16 +1,27 @@
 using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
 
-namespace Beep_Megalovania_SelfMade
+namespace WinFormsApp1
 {
-    class Program
+    public partial class Form1 : Form
     {
-        static void Main(string[] args)
+        public Form1()
         {
-            Random r = new Random();
+            InitializeComponent();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
             while (true)
-            { 
-                Console.ForegroundColor = (ConsoleColor)r.Next(0, 16);
-                Console.Write("Sans");
+            {
                 Console.Beep(587, 250);
                 Console.Beep(587, 250);
                 Console.Beep(1175, 500);
@@ -22,8 +33,6 @@ namespace Beep_Megalovania_SelfMade
                 Console.Beep(349, 250);
                 Console.Beep(392, 250);
 
-                Console.ForegroundColor = (ConsoleColor)r.Next(0, 16);
-                Console.WriteLine("Sans");
                 Console.Beep(523, 250);
                 Console.Beep(523, 250);
                 Console.Beep(1175, 500);
@@ -35,8 +44,6 @@ namespace Beep_Megalovania_SelfMade
                 Console.Beep(349, 250);
                 Console.Beep(392, 250);
 
-                Console.ForegroundColor = (ConsoleColor)r.Next(0, 16);
-                Console.Write("Sans");
                 Console.Beep(493, 250);
                 Console.Beep(493, 250);
                 Console.Beep(1175, 500);
@@ -48,8 +55,6 @@ namespace Beep_Megalovania_SelfMade
                 Console.Beep(349, 250);
                 Console.Beep(392, 250);
 
-                Console.ForegroundColor = (ConsoleColor)r.Next(0, 16);
-                Console.Write("Sans");
                 Console.Beep(466, 250);
                 Console.Beep(466, 250);
                 Console.Beep(1175, 500);
@@ -60,9 +65,9 @@ namespace Beep_Megalovania_SelfMade
                 Console.Beep(293, 250);
                 Console.Beep(349, 250);
                 Console.Beep(392, 250);
+
+
             }
-
-
         }
     }
 }
